@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapies.com/css2?family=Robot&disply=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Type selector -> body,h1,p,il */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 50%;
+}
+/*Barra de navegacion*/
+.menu {
+    position: fixed;
+    background-color: #666666;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+/*Aquí afectamos a todo nuestro menú de opciones*/
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+/*Aqui quitamos el subrayado y afectamos a todas la etiquetas a*/
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 10px;
+    transition: all 0.3s ease-in-out;
+}
+/*Aqui le damos un efecto de color a nuestras opciones cuando el mause este sobre la opcion*/
+.menu a:hover{
+    color:rgb(0, 0, 0);
+
+}
+/*pseudoclase caracteristicas especiales*/
+.hero::before{ /*pseudoclase*, lo pusimos antes*/
+    /*pseudoclase se ocupa los :: y luego la pseudoclase before y
+    sirve para
+    agregar un comportamiento especial y esta antes de clase*/
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(95, 171, 219, 0,7);
+    z-index:-1;
+}
+.hero h1{ /*solo los H1 dentro del hero*/
+    font-size: 40px;
+    margin: -20px 0 20px;
+}
+.hero p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+}
+.button{
+    display: none;
+    position: fixed;
+    bottom: 100%;
+    right: 0%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    font-size: 18px;
+}
+.button:hover{
+    background-color: gray;
+    color: red;
+}
